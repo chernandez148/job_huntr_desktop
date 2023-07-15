@@ -9,9 +9,7 @@ function NavBar({ setSearchedJobData }) {
     const [user, setUser] = useState(null)
     const [jobType, setJobType] = useState("");
     const [jobLocation, setJobLocation] = useState("");
-
     const navigate = useNavigate();
-    console.log(jobLocation, jobType)
 
     const jobSearchApiOptions = {
         method: 'GET',
@@ -37,21 +35,23 @@ function NavBar({ setSearchedJobData }) {
         onSubmit: (values) => {
             setJobType(values.jobType); // Save jobType in state
             setJobLocation(values.jobLocation); // Save jobLocation in state
-            axios
-                .request({
-                    ...jobSearchApiOptions,
-                    params: {
-                        ...jobSearchApiOptions.params,
-                        query: `${jobType} in ${jobLocation}, USA`
-                    }
-                })
-                .then((response) => {
-                    setSearchedJobData(response.data); // Update searchedJobData with the response data
-                    navigate('/search-results');
-                })
-                .catch((error) => {
-                    console.error(error); // Handle error if the promise is rejected
-                });
+            if (jobType && jobLocation) {
+                axios
+                    .request({
+                        ...jobSearchApiOptions,
+                        params: {
+                            ...jobSearchApiOptions.params,
+                            query: `${jobType} in ${jobLocation}, USA`
+                        }
+                    })
+                    .then((response) => {
+                        setSearchedJobData(response.data); // Update searchedJobData with the response data
+                        navigate('/search-results');
+                    })
+                    .catch((error) => {
+                        console.error(error); // Handle error if the promise is rejected
+                    });
+            }
         },
     });
 
