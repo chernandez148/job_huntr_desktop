@@ -74,7 +74,7 @@ function App() {
                 <NavBar setSearchedJobData={setSearchedJobData} />
                 <div className='app-wrapper'>
                     <Routes>
-                        <Route exact path='/' element={<>
+                        <Route exact path='/job_huntr_desktop' element={<>
                             <NearbyJobs jobData={jobData} />
                             <MostRecent jobData={jobData} />
                         </>} />

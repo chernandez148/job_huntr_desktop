@@ -60,7 +60,7 @@ function NavBar({ setSearchedJobData }) {
             <nav>
                 <div className='logo'>
                     <span>Sign In</span>
-                    <a href='/'><h3>Job Huntr</h3></a>
+                    <a href='/job_huntr_desktop'><h3>Job Huntr</h3></a>
                     <span>Sign Up</span>
                 </div>
                 <div className='search-form'>
