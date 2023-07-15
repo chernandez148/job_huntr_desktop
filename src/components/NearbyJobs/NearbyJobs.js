@@ -4,9 +4,6 @@ import './NearbyJobs.css';
 
 function NearbyJobs({ jobData }) {
     const [position, setPosition] = useState(0)
-    console.log(jobData);
-    console.log(position)
-
 
     const handlePrev = () => {
         if (position !== 0) {
