@@ -1,0 +1,47 @@
+.recent-card {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.274);
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recent-card:hover {
+    cursor: pointer;
+}
+
+.recent-job-details p {
+    margin: 0;
+}
+
+.recent-card span {
+    font-size: 14px;
+}
+
+.recent-job-details {
+    margin-bottom: 1.5rem;
+}
+
+.recent-card .recent-job-title {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-weight: bold;
+}
+
+.sub-job-details {
+    display: flex;
+}
+
+.job-salary,
+.employment-type {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #efefef;
+    width: fit-content;
+    padding: 0 .5rem;
+}

@@ -1,0 +1,17 @@
+.app-wrapper {
+    width: 1145px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1026px) {
+    .app-wrapper {
+        width: 650px;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-wrapper {
+        width: 100%;
+        padding: .5rem;
+    }
+}

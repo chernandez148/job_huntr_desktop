@@ -1,0 +1,66 @@
+.NearbyJobs {
+    text-align: center;
+}
+
+.nearby-jobs-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nearby-jobs-wrapper button {
+    background-color: transparent;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.274);
+    border-radius: 50%;
+    border: 0;
+    height: fit-content;
+    padding: 8px;
+}
+
+.job-card-wrapper {
+    display: flex;
+    overflow-x: hidden;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.job-card {
+    width: 200px;
+    flex: 0 0 200px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.274);
+    border-radius: 15px;
+    padding: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    transition: left 1s ease-in-out;
+}
+
+.job-card img {
+    max-width: 100%;
+}
+
+.job-card a {
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.5rem;
+}
+
+.job-details p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.employer-name {
+    color: #888;
+}
+
+.job-title {
+    font-weight: bold;
+}
