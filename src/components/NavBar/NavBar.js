@@ -16,7 +16,7 @@ function NavBar({ setSearchedJobData }) {
         url: 'https://jsearch.p.rapidapi.com/search',
         params: { radius: "25" },
         headers: {
-            'X-RapidAPI-Key': '87a13bb857msh6d480686553cc77p1415cajsn5fd5ebf1bbd6',
+            'X-RapidAPI-Key': 'KJwZZIJSFimshuivMSVGaiYzkRomp15f2vKjsnK4bKzuUzVLzA',
             'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
         }
     };
