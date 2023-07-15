@@ -19,7 +19,7 @@ function App() {
         url: 'https://ip-geo-location.p.rapidapi.com/ip/check',
         params: { format: 'json' },
         headers: {
-            'X-RapidAPI-Key': '87a13bb857msh6d480686553cc77p1415cajsn5fd5ebf1bbd6',
+            'X-RapidAPI-Key': 'KJwZZIJSFimshuivMSVGaiYzkRomp15f2vKjsnK4bKzuUzVLzA',
             'X-RapidAPI-Host': 'ip-geo-location.p.rapidapi.com'
         }
     };
