@@ -1,3 +1,8 @@
-.search-result-card {
-    width: 50%;
+.search-results-details {
+    border-radius: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: fit-content;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.274);
 }

@@ -12,6 +12,7 @@ function App() {
     const [location, setLocation] = useState({});
     const [jobData, setJobData] = useState({});
     const [searchedJobData, setSearchedJobData] = useState({});
+
     console.log(searchedJobData);
 
     const locationApiOptions = {
